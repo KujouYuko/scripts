@@ -1,0 +1,3 @@
+[submodule "android/mkbootimg"]
+	path = android/mkbootimg
+	url = https://github.com/osm0sis/mkbootimg.git
