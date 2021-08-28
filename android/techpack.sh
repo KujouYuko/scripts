@@ -25,10 +25,10 @@ VIDEO_REPO="https://source.codeaurora.${MIRROR}/quic/la/platform/vendor/opensour
 case "${OPTION}" in
     import | i)
         git subtree add --prefix=techpack/audio "${AUDIO_REPO}" "${BRANCH}"
+        git subtree add --prefix=techpack/data "${DATA_REPO}" "${BRANCH}"
         if [ "${VERSION}" -ge 4 ]; then
             if [ "${PATCH_LEVEL}" -eq 19 -o "${VERSION}" -ge 5 ]; then
                 git subtree add --prefix=techpack/camera "${CAMERA_REPO}" "${BRANCH}"
-                git subtree add --prefix=techpack/data "${DATA_REPO}" "${BRANCH}"
                 git subtree add --prefix=techpack/display "${DISPLAY_REPO}" "${BRANCH}"
                 git subtree add --prefix=techpack/video "${VIDEO_REPO}" "${BRANCH}"
             fi
@@ -37,10 +37,10 @@ case "${OPTION}" in
         ;;
     update | u)
         git subtree pull --prefix=techpack/audio "${AUDIO_REPO}" "${BRANCH}"
+        git subtree pull --prefix=techpack/data "${DATA_REPO}" "${BRANCH}"
         if [ "${VERSION}" -ge 4 ]; then
             if [ "${PATCH_LEVEL}" -eq 19 -o "${VERSION}" -ge 5 ]; then
                 git subtree pull --prefix=techpack/camera "${CAMERA_REPO}" "${BRANCH}"
-                git subtree pull --prefix=techpack/data "${DATA_REPO}" "${BRANCH}"
                 git subtree pull --prefix=techpack/display "${DISPLAY_REPO}" "${BRANCH}"
                 git subtree pull --prefix=techpack/video "${VIDEO_REPO}" "${BRANCH}"
             fi
