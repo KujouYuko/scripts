@@ -1,3 +1,6 @@
 [submodule "android/mkbootimg"]
 	path = android/mkbootimg
 	url = https://github.com/osm0sis/mkbootimg.git
+[submodule "android/split-appended-dtb"]
+	path = android/split-appended-dtb
+	url = https://github.com/dianlujitao/split-appended-dtb.git
