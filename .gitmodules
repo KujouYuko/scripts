@@ -4,6 +4,3 @@
 [submodule "android/split-appended-dtb"]
 	path = android/split-appended-dtb
 	url = https://github.com/dianlujitao/split-appended-dtb.git
-[submodule "android/ldcheck"]
-	path = android/ldcheck
-	url = https://github.com/that1/ldcheck.git
