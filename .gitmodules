@@ -4,3 +4,6 @@
 [submodule "android/split-appended-dtb"]
 	path = android/split-appended-dtb
 	url = https://github.com/dianlujitao/split-appended-dtb.git
+[submodule "android/aosp-missing-blobs"]
+	path = android/aosp-missing-blobs
+	url = https://github.com/joshchoo/aosp-missing-blobs.git
